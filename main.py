@@ -1,4 +1,4 @@
-from menu.start_menu import type_menu
+from menu.start_menu.menu import type_menu
 
 
 
@@ -21,9 +21,9 @@ while command != -1:
     current_option = current_option_list[command]
     current_menu = current_option.get_next_menu() if current_option.get_next_menu() is not None else type_menu
 
-    current_option.run()
+    print(current_option.execute())
 
-    print('')
+    print('-' * 10)
 
 
 
