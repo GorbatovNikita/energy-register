@@ -32,8 +32,9 @@ class Option:
         return self.function()
 
 '''
-
+    Decorators for better menu option's function view
 '''
+
 def option_input_int(message: str):
     def decorator(func):
         def wrapper():
